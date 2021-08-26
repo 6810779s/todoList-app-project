@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACR,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,IAAI;CAEjB",
+    "sources": [
+        "AddLists.module.scss"
+    ],
+    "names": [],
+    "file": "AddLists.module.css"
+}
