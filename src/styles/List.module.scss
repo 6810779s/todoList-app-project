@@ -1,0 +1,18 @@
+.items_container{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  .checkbox{
+    flex: 1;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    svg{
+      font-size: 20px;
+    }
+  }
+  .text{
+    flex: 1;
+    margin-left: 5px;
+  }
+}

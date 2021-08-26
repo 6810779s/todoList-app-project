@@ -1,0 +1,22 @@
+.items_container {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.items_container .checkbox {
+  flex: 1;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.items_container .checkbox svg {
+  font-size: 20px;
+}
+
+.items_container .text {
+  flex: 1;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=List.module.css.map */
