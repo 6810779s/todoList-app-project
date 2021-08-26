@@ -1,3 +1,5 @@
+@import '../variables/_variable.scss';
+
 .form{
   display: flex;
   border-bottom: 0.5px solid rgb(226, 220, 220);
@@ -22,5 +24,8 @@
     border: none;
     font-size: 30px;
     cursor: pointer;
+    svg:hover{
+      color: white;
+    }
   }
 }

@@ -1,3 +1,5 @@
+@import '../variables/_variable.scss';
+
 .items_container{
   padding: 15px;
   display: flex;
@@ -10,9 +12,37 @@
     svg{
       font-size: 20px;
     }
+    .text{
+      flex: 1;
+      margin-left: 5px;
+    }
   }
-  .text{
-    flex: 1;
-    margin-left: 5px;
+
+  .function{
+    display: flex;
+    svg{
+      margin-left: 8px;
+      cursor: pointer;
+      &:nth-child(1){
+        color: red;
+        font-size: 20px;
+        &:hover{
+          color: $mainColor;
+        }
+      }
+      &:nth-child(2){
+        color: rgb(136, 136, 241);
+        font-size: 20px;
+        &:hover{
+          color: $mainColor
+        }
+      }
+    }
+    
+  }
+  
+
+  &+&{
+    border-top: 1px solid rgba(226, 222, 222, 0.445)
   }
 }

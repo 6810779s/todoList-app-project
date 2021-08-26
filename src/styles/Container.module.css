@@ -17,8 +17,8 @@ body {
 .container .title_container {
   width: 100%;
   height: 60px;
-  background: pink;
-  color: gray;
+  background: #f0bdf1;
+  color: #636161;
   text-align: center;
   padding-top: 19px;
 }

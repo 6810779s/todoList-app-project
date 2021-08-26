@@ -24,4 +24,8 @@
   font-size: 30px;
   cursor: pointer;
 }
+
+.form button svg:hover {
+  color: white;
+}
 /*# sourceMappingURL=AddTodo.module.css.map */

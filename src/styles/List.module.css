@@ -15,8 +15,39 @@
   font-size: 20px;
 }
 
-.items_container .text {
+.items_container .checkbox .text {
   flex: 1;
   margin-left: 5px;
+}
+
+.items_container .function {
+  display: flex;
+}
+
+.items_container .function svg {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.items_container .function svg:nth-child(1) {
+  color: red;
+  font-size: 20px;
+}
+
+.items_container .function svg:nth-child(1):hover {
+  color: #f0bdf1;
+}
+
+.items_container .function svg:nth-child(2) {
+  color: #8888f1;
+  font-size: 20px;
+}
+
+.items_container .function svg:nth-child(2):hover {
+  color: #f0bdf1;
+}
+
+.items_container + .items_container {
+  border-top: 1px solid rgba(226, 222, 222, 0.445);
 }
 /*# sourceMappingURL=List.module.css.map */

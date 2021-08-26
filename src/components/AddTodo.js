@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import styles from '../styles/AddTodo.module.css';
 import { MdAdd } from 'react-icons/md';
-import AddLists from './AddLists';
 
 const AddTodo = () => {
   const [text, setText] = useState('');
@@ -16,7 +15,6 @@ const AddTodo = () => {
 
   const input = useRef(null);
   return (
-
     <form className={styles.form} onSubmit={submit}>
       <input
         type="text"
