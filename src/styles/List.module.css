@@ -20,6 +20,15 @@
   margin-left: 5px;
 }
 
+.items_container .checkbox.checked svg {
+  color: #f0bdf1;
+}
+
+.items_container .checkbox.checked .text {
+  text-decoration: line-through;
+  color: #615d5d71;
+}
+
 .items_container .function {
   display: flex;
 }
@@ -27,27 +36,22 @@
 .items_container .function svg {
   margin-left: 8px;
   cursor: pointer;
+  font-size: 20px;
 }
 
-.items_container .function svg:nth-child(1) {
+.items_container .function svg:hover {
+  color: #f0bdf1;
+}
+
+.items_container .function .remove {
   color: red;
-  font-size: 20px;
 }
 
-.items_container .function svg:nth-child(1):hover {
-  color: #f0bdf1;
-}
-
-.items_container .function svg:nth-child(2) {
+.items_container .function .modify {
   color: #8888f1;
-  font-size: 20px;
-}
-
-.items_container .function svg:nth-child(2):hover {
-  color: #f0bdf1;
 }
 
 .items_container + .items_container {
-  border-top: 1px solid rgba(226, 222, 222, 0.445);
+  border-top: 1px solid #e2dede71;
 }
 /*# sourceMappingURL=List.module.css.map */

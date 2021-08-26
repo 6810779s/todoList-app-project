@@ -16,6 +16,16 @@
       flex: 1;
       margin-left: 5px;
     }
+    //if checked
+    &.checked{
+      svg{
+        color: $mainColor;
+      }
+      .text{
+        text-decoration: line-through;
+        color: #615d5d71;
+      }
+    }
   }
 
   .function{
@@ -23,26 +33,23 @@
     svg{
       margin-left: 8px;
       cursor: pointer;
-      &:nth-child(1){
-        color: red;
-        font-size: 20px;
-        &:hover{
-          color: $mainColor;
-        }
+      font-size: 20px;
+      &:hover{
+        color: $mainColor;
       }
-      &:nth-child(2){
-        color: rgb(136, 136, 241);
-        font-size: 20px;
-        &:hover{
-          color: $mainColor
-        }
-      }
+    }
+    .remove{
+      color:red;
+    }
+    .modify{
+      color:#8888f1;
+
     }
     
   }
   
 
   &+&{
-    border-top: 1px solid rgba(226, 222, 222, 0.445)
+    border-top: 1px solid #e2dede71
   }
 }
