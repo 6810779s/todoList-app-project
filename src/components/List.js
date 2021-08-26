@@ -11,13 +11,16 @@ import {
 
 const cx = classNames.bind(styles);
 
-const List = ({ list }) => {
-  const { text, checked } = list;
+const List = ({ list, onClick_check }) => {
+  const { text, checked, id } = list;
   return (
     <div className={styles.items_container}>
-      <div className={cx('checkbox', { checked })}>
+      <div
+        className={cx('checkbox', { checked })}
+        onClick={() => onClick_check(id)}
+      >
         {checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
-        <div className={styles.text}>list</div>
+        <div className={styles.text}>{text}</div>
       </div>
       <div className={styles.function}>
         <div className={styles.remove}>
