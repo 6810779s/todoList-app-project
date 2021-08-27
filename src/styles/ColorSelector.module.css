@@ -1,0 +1,157 @@
+li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.red {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+}
+
+.orange {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: orange;
+  cursor: pointer;
+}
+
+.yellow {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: yellow;
+  cursor: pointer;
+}
+
+.green {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: green;
+  cursor: pointer;
+}
+
+.blue {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: blue;
+  cursor: pointer;
+}
+
+.deepBlue {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deepBlue div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #130a8f;
+  cursor: pointer;
+}
+
+.purple {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purple div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: purple;
+  cursor: pointer;
+}
+
+.pink {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pink div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: pink;
+  cursor: pointer;
+}
+
+.aqua {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aqua div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: aqua;
+  cursor: pointer;
+}
+
+.mint {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mint div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #a3f5ce;
+  cursor: pointer;
+}
+/*# sourceMappingURL=ColorSelector.module.css.map */

@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import Container from './components/Container';
 import AddTodo from './components/AddTodo';
 import AddLists from './components/AddLists';
+import ColorSelector from './components/ColorSelector';
 
 const App = () => {
   const [lists, setLists] = useState([]);
   const [nextId, setNextId] = useState(1);
+  const [color, setColor] = useState('');
 
   const onClick_check = (id) => {
     setLists(
@@ -33,6 +35,12 @@ const App = () => {
     setLists(lists.filter((list) => list.id !== id));
   };
 
+  const selectColor = (colorSelect) => {
+    setColor(colorSelect);
+    console.log(color);
+  };
+
+  const modify = (color) => {};
   // const onModify = (id, value) => {
   //   lists.map((list) => {
   //     if (list.id === id) {
@@ -43,13 +51,14 @@ const App = () => {
   // };
 
   return (
-    <Container>
+    <Container color={color}>
       <AddTodo insertList={insertList} />
       <AddLists
         lists={lists}
         onClick_check={onClick_check}
         onRemove={onRemove}
       />
+      <ColorSelector selectColor={selectColor} />
     </Container>
   );
 };

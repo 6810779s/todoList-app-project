@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/AddLists.module.css';
 import List from './List';
 
-const AddLists = ({ lists, onClick_check, onRemove, onModify }) => {
+const AddLists = ({ lists, onClick_check, onRemove }) => {
   return (
     <div className={styles.container}>
       {lists.map((list) => (

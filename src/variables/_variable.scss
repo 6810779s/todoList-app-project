@@ -1,1 +1,15 @@
 $mainColor: #f0bdf1;
+
+@mixin colorBox($color) {
+  background: #e7def0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: $color;
+    cursor: pointer;
+  }
+}

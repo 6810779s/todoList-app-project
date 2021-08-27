@@ -1,0 +1,38 @@
+@import '../variables/_variable.scss';
+
+li{
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  float: left
+}
+.red{
+  @include colorBox(red);
+}
+.orange{
+  @include colorBox(orange);
+}
+.yellow{
+  @include colorBox(yellow);
+}
+.green{
+  @include colorBox(green);
+}
+.blue{
+  @include colorBox(blue);
+}
+.deepBlue{
+  @include colorBox(#130a8f);
+}
+.purple{
+  @include colorBox(purple);
+}
+.pink{
+  @include colorBox(pink);
+}
+.aqua{
+  @include colorBox(aqua);
+}
+.mint{
+  @include colorBox(#a3f5ce);
+}
