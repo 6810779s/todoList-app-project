@@ -6,13 +6,13 @@ import {
   MdCheckBoxOutlineBlank,
   MdCheckBox,
   MdRemoveCircleOutline,
-  MdCreate,
 } from 'react-icons/md';
 
 const cx = classNames.bind(styles);
 
-const List = ({ list, onClick_check }) => {
+const List = ({ list, onClick_check, onRemove, onModify }) => {
   const { text, checked, id } = list;
+
   return (
     <div className={styles.items_container}>
       <div
@@ -23,12 +23,12 @@ const List = ({ list, onClick_check }) => {
         <div className={styles.text}>{text}</div>
       </div>
       <div className={styles.function}>
-        <div className={styles.remove}>
+        <div className={styles.remove} onClick={() => onRemove(id)}>
           <MdRemoveCircleOutline />
         </div>
-        <div className={styles.modify}>
+        {/* <div className={styles.modify} onClick={() => onModify(id, text)}>
           <MdCreate />
-        </div>
+        </div> */}
       </div>
     </div>
   );

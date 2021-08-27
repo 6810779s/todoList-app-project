@@ -2,15 +2,16 @@ import React, { useState, useRef } from 'react';
 import styles from '../styles/AddTodo.module.css';
 import { MdAdd } from 'react-icons/md';
 
-const AddTodo = () => {
-  const [text, setText] = useState('');
-  const [lists, setLists] = useState([]);
+const AddTodo = ({ insertList }) => {
+  const [value, setValue] = useState('');
 
   const submit = (e) => {
     e.preventDefault();
+    insertList(value);
+    setValue('');
   };
   const onChange = (e) => {
-    setText(e.target.value);
+    setValue(e.target.value);
   };
 
   const input = useRef(null);
@@ -19,7 +20,7 @@ const AddTodo = () => {
       <input
         type="text"
         placeholder="create a new list"
-        value={text}
+        value={value}
         onChange={onChange}
         ref={input}
       />
