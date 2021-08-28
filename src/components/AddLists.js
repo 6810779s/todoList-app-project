@@ -3,6 +3,7 @@ import styles from '../styles/AddLists.module.css';
 import List from './List';
 
 const AddLists = ({ lists, onClick_check, onRemove }) => {
+  //리스트 클릭시 발생할 이벤트 함수들 App에서 부터 받아옴
   return (
     <div className={styles.container}>
       {lists.map((list) => (

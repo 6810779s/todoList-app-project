@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/ColorSelector.module.css';
 
 const ColorSelector = ({ selectColor }) => {
+  //색깔 적용될 함수
   return (
     <div>
       <ul>

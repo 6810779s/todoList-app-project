@@ -5,11 +5,12 @@ import AddLists from './components/AddLists';
 import ColorSelector from './components/ColorSelector';
 
 const App = () => {
-  const [lists, setLists] = useState([]);
-  const [nextId, setNextId] = useState(1);
-  const [color, setColor] = useState('');
+  const [lists, setLists] = useState([]); //list초기화
+  const [nextId, setNextId] = useState(1); //list key에 줄 값
+  const [color, setColor] = useState(''); //todo list앱 색깔
 
   const onClick_check = (id) => {
+    //완료항목 체크시 발생할 이벤트
     setLists(
       lists.map((list) =>
         list.id === id ? { ...list, checked: !list.checked } : list
@@ -18,6 +19,7 @@ const App = () => {
   };
 
   const insertList = (text) => {
+    //할 일 추가시 발생 이벤트
     const list = {
       id: nextId,
       text,
@@ -32,15 +34,17 @@ const App = () => {
   };
 
   const onRemove = (id) => {
+    //할 일 목록 제거시 발생 이벤트
     setLists(lists.filter((list) => list.id !== id));
   };
 
   const selectColor = (colorSelect) => {
+    //색깔을 고를시 발생 이벤트
     setColor(colorSelect);
     console.log(color);
   };
 
-  const modify = (color) => {};
+  // const modify = (color) => {};
   // const onModify = (id, value) => {
   //   lists.map((list) => {
   //     if (list.id === id) {

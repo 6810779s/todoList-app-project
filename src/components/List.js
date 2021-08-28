@@ -10,8 +10,10 @@ import {
 
 const cx = classNames.bind(styles);
 
-const List = ({ list, onClick_check, onRemove, onModify }) => {
-  const { text, checked, id } = list;
+const List = ({ list, onClick_check, onRemove }) => {
+  
+  //리스트 안에 있는 요소들 받아오기
+  const { text, checked, id } = list; 
 
   return (
     <div className={styles.items_container}>
