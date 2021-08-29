@@ -41,7 +41,6 @@ const App = () => {
   const selectColor = (colorSelect) => {
     //색깔을 고를시 발생 이벤트
     setColor(colorSelect);
-    console.log(color);
   };
 
   // const modify = (color) => {};

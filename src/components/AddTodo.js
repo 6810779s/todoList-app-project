@@ -1,8 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/AddTodo.module.css';
 import { MdAdd } from 'react-icons/md';
 
+let num = 0;
 const AddTodo = ({ insertList }) => {
+  console.log('AddTo', num++);
   //insertList함수를 App에서 받아옴
   const [value, setValue] = useState(''); //value값 초기화
 

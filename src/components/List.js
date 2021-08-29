@@ -10,10 +10,11 @@ import {
 
 const cx = classNames.bind(styles);
 
+let num = 0;
 const List = ({ list, onClick_check, onRemove }) => {
-  
+  console.log('List', num++);
   //리스트 안에 있는 요소들 받아오기
-  const { text, checked, id } = list; 
+  const { text, checked, id } = list;
 
   return (
     <div className={styles.items_container}>
@@ -36,4 +37,4 @@ const List = ({ list, onClick_check, onRemove }) => {
   );
 };
 
-export default List;
+export default React.memo(List);

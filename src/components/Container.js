@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from '../styles/Container.module.css';
 
+let num = 0;
 const Container = ({ children, color }) => {
+  console.log('Container', num++);
   //children: Container컴포넌트 태그사이 컴포넌트들을 출력하기 위한 요소
   //color: App에서 color요소 받아옴
 

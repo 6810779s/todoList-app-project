@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import styles from '../styles/ColorSelector.module.css';
 
+let num = 0;
 const ColorSelector = ({ selectColor }) => {
+  console.log('ColorSelector', num++);
   //색깔 적용될 함수
   return (
     <div>
